@@ -1,0 +1,262 @@
+{
+    "description": "Caps Lock 增强：HJKL/WS方向, UNYI翻页HomeEnd, AD词级跳跃, BM选中, ,.单词选中, Space回车, Q/E删除, Z/X撤销重做, C截图 (使用 Hyper Key 避免 Control 冲突)",
+    "manipulators": [
+        {
+            "description": "基础设置：单击Esc，长按为 Hyper Key (Cmd+Opt+Ctrl+Shift)",
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_shift",
+                    "modifiers": ["left_command", "left_control", "left_option"]
+                }
+            ],
+            "to_if_alone": [{ "key_code": "escape" }],
+            "type": "basic"
+        },
+        {
+            "description": "Caps + C -> 区域截图至剪切板",
+            "from": {
+                "key_code": "c",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "4",
+                    "modifiers": ["left_command", "left_shift", "left_control"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "description": "Caps + Z/X -> 撤销/重做",
+            "from": {
+                "key_code": "z",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "z",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "x",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "z",
+                    "modifiers": ["left_command", "left_shift"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "description": "Caps + W/S/A/D -> 方向与跳跃",
+            "from": {
+                "key_code": "w",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "key_code": "up_arrow" }],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "s",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "key_code": "down_arrow" }],
+            "type": "basic"
+        },
+        {
+            "description": "Caps + Q/E -> 删除",
+            "from": {
+                "key_code": "q",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "key_code": "delete_or_backspace" }],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "e",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "key_code": "delete_forward" }],
+            "type": "basic"
+        },
+        {
+            "description": "Caps + HJKL -> 方向键",
+            "from": {
+                "key_code": "h",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "key_code": "left_arrow" }],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "j",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "key_code": "down_arrow" }],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "k",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "key_code": "up_arrow" }],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "l",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "key_code": "right_arrow" }],
+            "type": "basic"
+        },
+        {
+            "description": "Caps + U/N -> PageUp/Down",
+            "from": {
+                "key_code": "u",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "key_code": "page_up" }],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "n",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "key_code": "page_down" }],
+            "type": "basic"
+        },
+        {
+            "description": "Caps + Y/I -> Home/End",
+            "from": {
+                "key_code": "y",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "i",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "description": "Caps + A/D -> 词级跳跃",
+            "from": {
+                "key_code": "a",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": ["left_option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "d",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "description": "Caps + B/M -> 字符级选中",
+            "from": {
+                "key_code": "b",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": ["left_shift"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "m",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_shift"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "description": "Caps + ,/. -> 词级选中",
+            "from": {
+                "key_code": "comma",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": ["left_shift", "left_option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "period",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_shift", "left_option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "description": "Caps + Space -> 回车",
+            "from": {
+                "key_code": "spacebar",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "key_code": "return_or_enter" }],
+            "type": "basic"
+        }
+    ]
+}
