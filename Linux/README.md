@@ -4,12 +4,31 @@
 
 
 **使用方式**：
+
 1. 安装 [keyd](https://github.com/rvaiya/keyd) 后，将 `default.conf` 复制到 keyd 配置目录（如 `/etc/keyd/default.conf` 或 `~/.config/keyd/default.conf`）
+
 2. 重启 `keyd` 服务
 
 ```
 sudo keyd reload
 ```
+
+3. 设置为开机自启动：
+
+```bash
+sudo systemctl enable keyd
+```
+
+
+**停止映射**
+
+停止 keyd 服务即可恢复系统默认键位：
+
+```
+sudo systemctl stop keyd
+```
+
+若需开机不自动启用，可执行 `sudo systemctl disable keyd`。
 
 ---
 
