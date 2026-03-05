@@ -1,22 +1,31 @@
-# Windows 键位方案
+# Linux 键位方案
 
-本目录使用 **AutoHotkey v2** 实现键位映射，主入口为 `voov_260129.ahk`（会加载下方两个脚本）。
+本目录为 **keyd** 配置，通过 `default.conf` 实现与 Windows/Mac 方案一致的键位映射（左 Ctrl/Alt 交换 + Caps Lock 导航层）。
 
-**使用方式**：安装 AutoHotkey v2 后，运行 `voov_260129.ahk` 即可生效。
+
+**使用方式**：
+1. 安装 [keyd](https://github.com/rvaiya/keyd) 后，将 `default.conf` 复制到 keyd 配置目录（如 `/etc/keyd/default.conf` 或 `~/.config/keyd/default.conf`）
+2. 重启 `keyd` 服务
+
+```
+sudo keyd reload
+```
 
 ---
 
-## 1. 左 Ctrl / 左 Alt 交换 (`swap_lctrl_lalt.ahk`)
+## 1. 左 Ctrl / 左 Alt 交换
 
 | 物理键 | 映射为 |
 |--------|--------|
 | 左 Ctrl | 左 Alt |
 | 左 Alt  | 左 Ctrl |
 
-## 2. Caps Lock 增强 (`capslock_enhance.ahk`)
+## 2. Caps Lock 增强
 
 - **单击 Caps Lock** → 发送 **Esc**
-- **按住 Caps Lock** 时，以下键作为修饰层：
+- **长按 Caps Lock** 时进入 **nav** 层，以下键作为导航/功能键
+
+以下“Caps + 某键”均指 **按住 Caps Lock 再按该键**。
 
 ### 方向与移动
 
@@ -42,6 +51,5 @@
 |------|------|
 | Caps + Q / E | Backspace / Delete |
 | Caps + Z / X | 撤销 / 重做（Ctrl+Z / Ctrl+Y） |
-| Caps + Space | 关闭当前窗口（Alt+F4） |
-| Caps + C | 区域截图到剪贴板（Win+Shift+S） |
-| Caps + Esc 或 Caps + 右 Alt | 关闭当前窗口（Alt+F4） |
+| Caps + Space / Esc / 右 Alt | 关闭当前窗口（Alt+F4） |
+| Caps + C | 区域截图到剪贴板（Shift+PrintScreen，需配合系统快捷键） |

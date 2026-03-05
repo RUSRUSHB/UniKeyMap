@@ -39,4 +39,4 @@
 
 ---
 
-**使用方式**：将 `Karabiner[20250118].txt` 中的 JSON 导入 Karabiner-Elements 的「Complex Modifications」即可。设计上使用 Hyper Key 是为了避免与系统/应用的 Ctrl 快捷键冲突。
+**使用方式**：将 `Karabiner[20260118].txt` 中的 JSON 导入 Karabiner-Elements 的「Complex Modifications」即可。
