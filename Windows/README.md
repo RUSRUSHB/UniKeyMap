@@ -4,6 +4,8 @@
 
 **使用方式**：安装 AutoHotkey v2 后，运行 `voov_260129.ahk` 即可生效。
 
+> **注意**：此方案在 mstsc（Windows 远程桌面）的窗口中不会工作，以防引发不稳定的结果。
+
 ---
 
 ## 1. 左 Ctrl / 左 Alt 交换 (`swap_lctrl_lalt.ahk`)
