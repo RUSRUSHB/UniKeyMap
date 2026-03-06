@@ -5,11 +5,19 @@
 #Requires AutoHotkey v2.0
 SendMode "Input"
 
+; 在远程桌面窗口中不启用本脚本
+IsRemoteDesktop() {
+    try
+        return ProcessGetName(WinGetPID("A")) = "mstsc.exe"
+    return false
+}
+
 SetCapsLockState "AlwaysOff"
+#HotIf !IsRemoteDesktop()
 CapsLock::Send "{Escape}"
 
 ; --- 第一大类 ---
-#HotIf GetKeyState("CapsLock", "P")
+#HotIf GetKeyState("CapsLock", "P") and !IsRemoteDesktop()
 
 ; --- 方向与跳跃 ---
 w::Send "{Up}"
@@ -54,7 +62,8 @@ c::Send "#+s"
 #HotIf
 ; --- 第一大类结束 --- 
 
-; LCtrl, LAlt = Ctrl+shift+Left, Ctrl+shift+Right
+; LCtrl, LAlt = Ctrl+shift+Left, Ctrl+shift+Right（远程桌面中不启用）
+#HotIf !IsRemoteDesktop()
 CapsLock & LCtrl::{
     Send "^+{Left}"
 }
