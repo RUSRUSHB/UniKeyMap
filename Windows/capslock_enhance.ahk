@@ -59,6 +59,10 @@ x::Send "^y"
 ; --- 区域截图至剪切板 (Win+Shift+S) ---
 c::Send "#+s"
 
+; --- 鼠标 ---
+f::Send "{Click}"
+g::Send "{Click right}"
+
 #HotIf
 ; --- 第一大类结束 --- 
 

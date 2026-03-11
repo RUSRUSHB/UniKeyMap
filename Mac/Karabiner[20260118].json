@@ -257,6 +257,24 @@
             },
             "to": [{ "key_code": "return_or_enter" }],
             "type": "basic"
+        },
+        {
+            "description": "Caps + F -> 鼠标左键",
+            "from": {
+                "key_code": "f",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "pointing_button": "button1" }],
+            "type": "basic"
+        },
+        {
+            "description": "Caps + G -> 鼠标右键",
+            "from": {
+                "key_code": "g",
+                "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+            },
+            "to": [{ "pointing_button": "button2" }],
+            "type": "basic"
         }
     ]
 }
