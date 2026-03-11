@@ -62,6 +62,8 @@ c::Send "#+s"
 ; --- 鼠标 ---
 f::Send "{Click}"
 g::Send "{Click right}"
+r::Send "{WheelUp}"
+v::Send "{WheelDown}"
 
 #HotIf
 ; --- 第一大类结束 --- 
