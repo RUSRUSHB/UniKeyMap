@@ -33,6 +33,10 @@ n::Send "{PgDn}"
 y::Send "{Home}"
 i::Send "{End}"
 
+; --- Alt + 上/下 (如资源管理器/浏览器后退前进) ---
+[::Send "!{Up}"
+]::Send "!{Down}"
+
 ; --- 删除 ---
 q::Send "{Backspace}"
 e::Send "{Delete}"

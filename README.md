@@ -16,7 +16,7 @@
 | 平台 | 实现 | 说明与用法 |
 |------|------|------------|
 | **Linux** | [keyd](https://github.com/rvaiya/keyd) | [Linux/README.md](Linux/README.md) |
-| **Windows** | AutoHotkey v2 | [Windows/README.md](Windows/README.md) |
-| **Mac** | Karabiner-Elements | [Mac/README.md](Mac/README.md) |
+| **Windows** | [AutoHotkey v2](https://www.autohotkey.com/) | [Windows/README.md](Windows/README.md) |
+| **Mac** | [Karabiner-Elements](https://karabiner-elements.pqrs.org/) | [Mac/README.md](Mac/README.md) |
 
 按需进入对应目录，按该目录 README 安装并启用即可。

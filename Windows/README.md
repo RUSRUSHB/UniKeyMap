@@ -1,21 +1,21 @@
 # Windows 键位方案
 
-本目录使用 **AutoHotkey v2** 实现键位映射，主入口为 `voov_260129.ahk`（会加载下方两个脚本）。
+本目录使用 **AutoHotkey v2** 实现键位映射，主入口为 `unikeymap.ahk`。
 
-**使用方式**：安装 AutoHotkey v2 后，运行 `voov_260129.ahk` 即可生效。
+**使用方式**：安装 AutoHotkey v2 后，运行 `unikeymap.ahk` 即可生效。若需在管理员权限窗口内也生效，可右键「以管理员身份运行」。
 
 > **注意**：此方案在 mstsc（Windows 远程桌面）的窗口中不会工作，以防引发不稳定的结果。
 
 ---
 
-## 1. 左 Ctrl / 左 Alt 交换 (`swap_lctrl_lalt.ahk`)
+## 1. 左 Ctrl / 左 Alt 交换
 
 | 物理键 | 映射为 |
 |--------|--------|
 | 左 Ctrl | 左 Alt |
 | 左 Alt  | 左 Ctrl |
 
-## 2. Caps Lock 增强 (`capslock_enhance.ahk`)
+## 2. Caps Lock 增强
 
 - **单击 Caps Lock** → 发送 **Esc**
 - **按住 Caps Lock** 时，以下键作为修饰层：
@@ -29,6 +29,7 @@
 | Caps + U / N | Page Up / Page Down |
 | Caps + Y / I | Home / End |
 | Caps + A / D | 词级跳跃（Ctrl+Left / Ctrl+Right） |
+| Caps + [ / ] | Alt+Up / Alt+Down（如资源管理器上一级/下一级） |
 
 ### 选中
 
@@ -47,3 +48,10 @@
 | Caps + Space | 关闭当前窗口（Alt+F4） |
 | Caps + C | 区域截图到剪贴板（Win+Shift+S） |
 | Caps + Esc 或 Caps + 右 Alt | 关闭当前窗口（Alt+F4） |
+
+### 鼠标
+
+| 组合 | 效果 |
+|------|------|
+| Caps + F / G | 鼠标左键 / 右键 |
+| Caps + R / V | 滚轮上 / 滚轮下 |
