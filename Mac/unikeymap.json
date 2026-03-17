@@ -1,5 +1,5 @@
 {
-    "description": "Caps Lock 增强：HJKL/WS方向, UNYI翻页HomeEnd, AD词级跳跃, BM选中, ,.单词选中, Space回车, Q/E删除, Z/X撤销重做, C截图 (使用 Hyper Key 避免 Control 冲突)",
+    "description": "Caps Lock 增强：HJKL/WS方向, UN翻页YI行首尾, []上一级下一级, AD词级跳跃, BM选中, ,.单词选中, Space回车, Q/E删除, Z/X撤销重做, C截图, FG鼠标, RV滚轮",
     "manipulators": [
         {
             "description": "基础设置：单击Esc，长按为 Hyper Key (Cmd+Opt+Ctrl+Shift)",
