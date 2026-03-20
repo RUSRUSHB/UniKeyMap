@@ -70,8 +70,10 @@ sudo systemctl stop keyd
 | 组合 | 效果 |
 |------|------|
 | `Caps` + `Q` / `E` | `Backspace` / `Delete` |
+| `Caps` + `1` / `2` | `/` / `\` |
+| `Caps` + `` ` `` | `Enter` |
 | `Caps` + `Z` / `X` | 撤销 / 重做（`Ctrl`+`Z` / `Ctrl`+`Y`） |
-| `Caps` + `Space` / `Esc` / `右 Alt` | 关闭当前窗口（`Alt`+`F4`） |
+| `Caps` + `Space` / `右 Alt` | 关闭当前窗口（`Alt`+`F4`） |
 | `Caps` + `C` | 区域截图到剪贴板（`Shift`+`PrintScreen`，需配合系统快捷键） |
 
 ### 鼠标

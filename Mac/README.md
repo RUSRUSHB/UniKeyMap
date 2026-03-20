@@ -34,6 +34,8 @@
 | 组合 | 效果 |
 |------|------|
 | `Caps` + `Q` / `E` | `Backspace` / `Delete`（前删/后删） |
+| `Caps` + `1` / `2` | `/` / `\` |
+| `Caps` + `` ` `` | `Enter` |
 | `Caps` + `Z` / `X` | 撤销 / 重做（`Cmd`+`Z` / `Cmd`+`Shift`+`Z`） |
 | `Caps` + `Space` | 回车 |
 | `Caps` + `C` | 区域截图到剪贴板（`Cmd`+`Shift`+`Ctrl`+`4`） |

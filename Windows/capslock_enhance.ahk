@@ -40,6 +40,9 @@ i::Send "{End}"
 ; --- 删除 ---
 q::Send "{Backspace}"
 e::Send "{Delete}"
+1::Send "/"
+2::Send "\"
+SC029::Send "{Enter}"
 
 ; --- 词级跳跃 (Ctrl+Left/Right) ---
 a::Send "^{Left}"
@@ -81,10 +84,7 @@ CapsLock & LAlt::{
     Send "^+{Right}"
 }
 
-; Esc/RAlt: Alt+F4
-CapsLock & Esc::{
-    Send "!{F4}"
-}
+; RAlt: Alt+F4
 CapsLock & RAlt::{
     Send "!{F4}"
 }
