@@ -1,6 +1,6 @@
 ; Caps Lock 增强
 ; 单击 CapsLock = Esc；按住 CapsLock + 以下键：
-; HJKL/WS 方向, UN 翻页, YI Home/End, AD 词跳, BM 字符选中, ,. 词选, Space 回车, QE 删除, ZX 撤销重做, C 区域截图
+; HJKL/WS 方向, UN 翻页, YI Home/End, AD 词跳, BM 字符选中, ,. 词选, ZX 左右, Space 回车, QE 删除, C 区域截图
 
 #Requires AutoHotkey v2.0
 SendMode "Input"
@@ -59,9 +59,9 @@ m::Send "+{Right}"
 ; --- 关闭窗口 ---
 Space::Send "!{F4}"
 
-; --- 撤销 / 重做 ---
-z::Send "^z"
-x::Send "^y"
+; --- 左 / 右 ---
+z::Send "{Left}"
+x::Send "{Right}"
 
 ; --- 区域截图至剪切板 (Win+Shift+S) ---
 c::Send "#+s"

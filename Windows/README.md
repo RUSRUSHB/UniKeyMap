@@ -53,7 +53,7 @@
 | `Caps` + `Q` / `E`                | `Backspace` / `Delete`           |
 | `Caps` + `1` / `2`                | `/` / `\`                        |
 | `Caps` + `` ` ``                  | `Enter`                          |
-| `Caps` + `Z` / `X`                | 撤销 / 重做（`Ctrl`+`Z` / `Ctrl`+`Y`） |
+| `Caps` + `Z` / `X`                | 左 / 右 |
 | `Caps` + `Space`                  | 关闭当前窗口（`Alt`+`F4`）               |
 | `Caps` + `C`                      | 区域截图到剪贴板（`Win`+`Shift`+`S`）      |
 | `Caps` + `右 Alt`                    | 关闭当前窗口（`Alt`+`F4`）               |

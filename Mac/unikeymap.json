@@ -1,5 +1,5 @@
 {
-    "description": "Caps Lock 增强：HJKL/WS方向, UN翻页YI行首尾, []上一级下一级, AD词级跳跃, BM选中, ,.单词选中, Space回车, Q/E删除, Z/X撤销重做, C截图, FG鼠标, RV滚轮",
+    "description": "Caps Lock 增强：HJKL/WS方向, UN翻页YI行首尾, []上一级下一级, AD词级跳跃, BM选中, ,.单词选中, Z/X左右, Space回车, Q/E删除, C截图, FG鼠标, RV滚轮",
     "manipulators": [
         {
             "description": "基础设置：单击Esc，长按为 Hyper Key (Cmd+Opt+Ctrl+Shift)",
@@ -31,17 +31,12 @@
             "type": "basic"
         },
         {
-            "description": "Caps + Z/X -> 撤销/重做",
+            "description": "Caps + Z/X -> 左/右",
             "from": {
                 "key_code": "z",
                 "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
             },
-            "to": [
-                {
-                    "key_code": "z",
-                    "modifiers": ["left_command"]
-                }
-            ],
+            "to": [{ "key_code": "left_arrow" }],
             "type": "basic"
         },
         {
@@ -49,12 +44,7 @@
                 "key_code": "x",
                 "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
             },
-            "to": [
-                {
-                    "key_code": "z",
-                    "modifiers": ["left_command", "left_shift"]
-                }
-            ],
+            "to": [{ "key_code": "right_arrow" }],
             "type": "basic"
         },
         {
